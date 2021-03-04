@@ -1,0 +1,38 @@
+{
+  "name": "cypress-demo-project",
+  "version": "1.0.0",
+  "description": "This is a demo cypress project using Cucumber and page object model",
+  "main": "index.js",
+  "scripts": {
+    "cypress": "cypress open",
+    "allure:clear": "rm -r cypress/allure/results/ cypress/allure/report cypress/screenshots || true",
+    "allure:reports": "allure generate cypress/allure/results --clean -o cypress/allure/report && allure open cypress/allure/report",
+    "address:test": "cypress run --spec cypress/integration/AddressBook/tests/*.spec.js --browser chrome --record --key e93b4bcf-0787-4962-a439-450c19966bfb",
+    "test:allure": "npm run allure:clear & npm run address:test & npm run allure:reports",
+    "bank:cucumber": "cypress run --spec \"**/*.feature\" --browser chrome --record --key e93b4bcf-0787-4962-a439-450c19966bfb",
+    "cucumber:allure": "npm run allure:clear & npm run bank:cucumber & npm run allure:reports",
+    "test": "npm run allure:clear & npm run address:test & npm run bank:cucumber & npm run allure:reports"
+  },
+  "author": "Vinay Kumar B M",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^1.5.0",
+    "@bahmutov/cy-api": "^1.4.3",
+    "@shelex/cypress-allure-plugin": "^2.3.4",
+    "axe-core": "^4.1.2",
+    "cypress": "^6.5.0",
+    "cypress-axe": "^0.12.2",
+    "cypress-commands": "^1.1.0",
+    "cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress-dark": "^1.7.14",
+    "cypress-downloadfile": "^1.2.0",
+    "cypress-file-upload": "^5.0.2",
+    "cypress-iframe": "^1.0.1",
+    "cypress-xpath": "^1.6.2",
+    "xlsx": "^0.16.9"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/integration/Banking/stepDefinitions"
+  }
+}

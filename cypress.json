@@ -1,0 +1,19 @@
+{
+    "baseUrl": "http://a.testaddressbook.com/",
+    "userName": "test321@yahoo.com",
+    "password": "test321",
+    "pageLoadTimeout": 90000,
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "retries": {
+        "runMode": 1,
+        "openMode": 0
+    },
+    "env": {
+        "allureResultsPath": "cypress/allure/results",
+        "allure": true
+    },
+    "projectId": "qd32q7",
+    "theme": "dark",
+    "testFiles": ["**/*.feature", "**/AddressBook/tests/*", "**/examples/**"]    
+}
