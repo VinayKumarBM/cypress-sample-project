@@ -1,0 +1,54 @@
+{
+    "newAddress": {
+        "firstName": "Jane",
+        "lastName": "Doe",
+        "address1": "1943  Mayo Street",
+        "address2": "Brent Wood Ln",
+        "city": "Alexandria",
+        "state": "Kentucky",
+        "stateDisplay": "KY",
+        "zipCode": "41001",
+        "country": "us",
+        "dob": "1990-01-26",
+        "dobDisplay": "1/26/1990",
+        "age": "31",
+        "website": "https://www.fakeaddressgenerator.com/usa_address_generator",
+        "picture": "Avatar.jpg",
+        "phone": "610-475-8601",
+        "hobby": {
+            "climbing": "No",
+            "dancing": "Yes",
+            "reading": "No"
+        },
+        "note": "Problem solver. Award-winning coffee expert. Hipster-friendly web nerd. Proud twitter enthusiast. Alcohol fanatic.",
+        "successMessage": "Address was successfully created.",
+        "errorHeading": "5 errors prohibited this address from being saved:",
+        "firstNameError": "First name can't be blank",
+        "lastNameError": "Last name can't be blank",
+        "addressError": "Address1 can't be blank",
+        "cityError": "City can't be blank",
+        "zipError": "Zip code can't be blank"
+    },
+    "address": {
+        "welcomeMessage": "Welcome to Address Book",
+        "heading": "Addresses",
+        "deleteMessage": "Address was successfully destroyed.",
+        "loginError": "Bad email or password."
+    },
+    "updateAddress": {
+        "firstName": "John",
+        "lastName": "Doe",
+        "city": "St Georges",
+        "state": "New York",
+        "stateDisplay": "NY",
+        "zipCode": "41001",
+        "country": "canada",
+        "hobby": {
+            "climbing": "Yes",
+            "dancing": "Yes",
+            "reading": "No"
+        },
+        "note": "If fishing is a religion, fly fishing is high church.",
+        "successMessage": "Address was successfully updated."
+    }
+}

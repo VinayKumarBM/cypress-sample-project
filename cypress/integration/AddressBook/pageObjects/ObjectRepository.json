@@ -1,0 +1,74 @@
+{
+    "HomePage": {
+        "homeLink": "Home",
+        "signInLink": "Sign in",
+        "welcomeText": "h1",
+        "currentUser": "[data-test='current-user']",
+        "addressesLink": "[data-test='addresses']",
+        "signOutLink": "Sign out"
+    },
+    "SignUpPage": {
+        "emailTextbox": "#user_email",
+        "passwordTextbox": "#user_password",
+        "signUpButton": "input[type='submit']"
+    },
+    "SignInPage": {
+        "emailTextbox": "#session_email",
+        "passwordTextbox": "#session_password",
+        "signInButton": "input[type='submit']",
+        "signUpLink": "Sign up"
+    },
+    "AddressesPage": {
+        "lastAddressRow": "table>tbody>tr:last-child>td",
+        "showLastAddressLink": "tbody>tr:last-child>td>a[data-test^='show']",
+        "editLastAddressLink": "tbody>tr:last-child>td>a[data-test^='edit']",
+        "newAddressLink": "New Address",
+        "messageText": "[data-test='notice']",
+        "headingText": "h2",
+        "deleteLinks": "td a[data-method='delete']",
+        "deleteLinkXpath": "(//a[text()='Destroy'])[pos]"
+    },
+    "EditAddressPage": {
+        "firstNameInputbox": "#address_first_name",
+        "lastNameInputbox": "#address_last_name",
+        "cityInputbox": "#address_city",
+        "stateDropdown": "#address_state",
+        "countryRadioButton": "[type='radio']",
+        "climbingXpath": "//input[@id='address_interest_climb']",
+        "dancingXpath": "//input[@id='address_interest_dance']",
+        "readingXpath": "//input[@id='address_interest_read']",
+        "noteTextarea": "#address_note",
+        "updateAddressButton": "Update Address"
+    },
+    "AddressDetailsPage":{
+        "listLink": "List",
+        "messageText": "[data-test='notice']",
+        "addressDetailsColumn": ".row>span:last-child"
+    },
+    "NewAddressPage": {
+        "firstNameInputbox": "#address_first_name",
+        "lastNameInputbox": "#address_last_name",
+        "address1Inputbox": "#address_street_address",
+        "address2Inputbox": "#address_secondary_address",
+        "cityInputbox": "#address_city",        
+        "stateDropdown": "#address_state",
+        "zipCodeInputbox": "#address_zip_code",
+        "countryRadioButton": "[type='radio']",
+        "dob":"#address_birthday",
+        "ageInputbox":"#address_age",
+        "websiteInputbox": "#address_website",
+        "picture": "#address_picture",
+        "phoneInputbox": "#address_phone",
+        "climbingCheckbox": "//input[@id='address_interest_climb']",
+        "dancingCheckbox": "//input[@id='address_interest_dance']",
+        "readingCheckbox": "//input[@id='address_interest_read']",
+        "noteTextarea": "#address_note",
+        "createAddressButton": "Create Address",
+        "errorMessage": "h4",
+        "firstNameError": "#error_explanation>ul>li:nth-child(1)",
+        "lastNameError": "#error_explanation>ul>li:nth-child(2)",
+        "addressError": "#error_explanation>ul>li:nth-child(3)",
+        "cityError": "#error_explanation>ul>li:nth-child(4)",
+        "zipError": "#error_explanation>ul>li:nth-child(5)"
+    }
+}
