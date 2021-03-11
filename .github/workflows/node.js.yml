@@ -1,0 +1,19 @@
+name: Cypress E2E Test
+on:
+  push:
+    branches: [ master ]
+jobs:
+  cypress-run:
+    name: Cypress run
+    runs-on: windows-latest
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          spec: |
+            cypress/integration/AddressBook/tests/*.spec.js
+            cypress/integration/Banking/features/*.feature
