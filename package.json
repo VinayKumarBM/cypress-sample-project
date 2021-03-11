@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cypress": "cypress open",
-    "allure:clear": "rm -r cypress/allure/results/ cypress/allure/report cypress/screenshots || true",
+    "allure:clear": "rmdir /s /q \"cypress/allure/results/\" \"cypress/allure/report\" \"cypress/screenshots\"",
     "allure:reports": "allure generate cypress/allure/results --clean -o cypress/allure/report && allure open cypress/allure/report",
     "address:test": "cypress run --spec cypress/integration/AddressBook/tests/*.spec.js --browser chrome --record --key e93b4bcf-0787-4962-a439-450c19966bfb",
     "test:allure": "npm run allure:clear & npm run address:test & npm run allure:reports",
